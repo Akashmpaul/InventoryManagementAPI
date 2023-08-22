@@ -66,11 +66,11 @@ namespace InventoryManagement.Controllers
             return Accepted();
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
-        {
-            await _service.Product.DeleteProductAsync(id);
-            return NoContent();
-        }
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteProduct(int id)
+        //{
+        //    await _service.Product.DeleteProductAsync(id);
+        //    return NoContent();
+        //}
     }
 }

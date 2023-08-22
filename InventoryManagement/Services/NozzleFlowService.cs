@@ -4,6 +4,7 @@ using InventoryManagement.DTOs;
 using InventoryManagement.Extension.Exceptions;
 using InventoryManagement.Extension.Logger;
 using InventoryManagement.Repository.Contracts;
+using InventoryManagement.Services.Contracts;
 
 namespace InventoryManagement.Services
 {
@@ -77,24 +78,24 @@ namespace InventoryManagement.Services
             _logger.LogInfo($"Commited all transactions in database.");
         }
 
-        public async Task DeleteNozzleFlowAsync(int id)
-        {
-            var _nozzle = await _repository.nozzle.GetNozzleFlowByID(id);
-            if (_nozzle == null)
-            {
-                throw new NotFoundException($"Lead with id: {id} doesn't exist in the database.");
-            }
+        //public async Task DeleteNozzleFlowAsync(int id)
+        //{
+        //    var _nozzle = await _repository.nozzle.GetNozzleFlowByID(id);
+        //    if (_nozzle == null)
+        //    {
+        //        throw new NotFoundException($"Lead with id: {id} doesn't exist in the database.");
+        //    }
 
-            _logger.LogInfo($"Getting Related logs in database.");
+        //    _logger.LogInfo($"Getting Related logs in database.");
 
-            _repository.nozzle.Delete(_nozzle);
-            _logger.LogInfo($"Deleted the lead {id} from database");
+        //    _repository.nozzle.Delete(_nozzle);
+        //    _logger.LogInfo($"Deleted the lead {id} from database");
 
-            await _repository.Save();
-            _logger.LogInfo($"Commited all transactions in database.");
-        }
+        //    await _repository.Save();
+        //    _logger.LogInfo($"Commited all transactions in database.");
+        //}
 
 
     }
 }
-}
+

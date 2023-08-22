@@ -8,6 +8,6 @@ namespace InventoryManagement.Services.Contracts
         Task<ProductCategoryDto> GetAllProductCategoryByIDAsync(int id);
         Task<ProductCategoryDto> CreateNewProductCategoryAsync(ProductCategoryDto NewCategoryInfo);
         Task UpdateProductCategoryAsync(int id, ProductCategoryDto UpdatedProductCategoryinfo);
-        Task DeleteProductCategoryAsync(int id);
+       // Task DeleteProductCategoryAsync(int id);
     }
 }

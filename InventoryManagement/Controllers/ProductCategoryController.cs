@@ -66,11 +66,11 @@ namespace InventoryManagement.Controllers
 
             return Accepted();
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCategory(int id)
-        {
-            await _service.Category.DeleteProductCategoryAsync(id);
-            return NoContent();
-        }
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteCategory(int id)
+        //{
+        //    await _service.Category.DeleteProductCategoryAsync(id);
+        //    return NoContent();
+        //}
     }
 }

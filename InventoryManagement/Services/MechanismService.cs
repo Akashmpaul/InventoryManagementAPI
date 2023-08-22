@@ -88,7 +88,7 @@ namespace InventoryManagement.Services
 
             _logger.LogInfo($"Getting Related logs in database.");
 
-            _repository.mechanism.Delete(_mechanism);
+           // _repository.mechanism.Delete(_mechanism);
             _logger.LogInfo($"Deleted the lead {id} from database");
 
             await _repository.Save();

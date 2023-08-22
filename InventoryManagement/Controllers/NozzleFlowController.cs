@@ -64,11 +64,11 @@ namespace InventoryManagement.Controllers
 
             return Accepted();
         }
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteNozzleFlow(int id)
-        {
-            await _service.NozzleFlow.DeleteNozzleFlowAsync(id);
-            return NoContent();
-        }
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> DeleteNozzleFlow(int id)
+        //{
+        //    await _service.NozzleFlow.DeleteNozzleFlowAsync(id);
+        //    return NoContent();
+        //}
     }
 }

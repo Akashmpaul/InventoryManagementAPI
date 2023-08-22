@@ -78,22 +78,22 @@ namespace InventoryManagement.Services
             _logger.LogInfo($"Commited all transactions in database.");
         }
 
-        public async Task DeleteProductCategoryAsync(int id)
-        {
-            var _category = await _repository.category.GetAllProductCategoryByID(id);
-            if (_category == null)
-            {
-                throw new NotFoundException($"Lead with id: {id} doesn't exist in the database.");
-            }
+        //public async Task DeleteProductCategoryAsync(int id)
+        //{
+        //    var _category = await _repository.category.GetAllProductCategoryByID(id);
+        //    if (_category == null)
+        //    {
+        //        throw new NotFoundException($"Lead with id: {id} doesn't exist in the database.");
+        //    }
 
-            _logger.LogInfo($"Getting Related logs in database.");
+        //    _logger.LogInfo($"Getting Related logs in database.");
 
-            _repository.category.Delete(_category);
-            _logger.LogInfo($"Deleted the lead {id} from database");
+        //    _repository.category.Delete(_category);
+        //    _logger.LogInfo($"Deleted the lead {id} from database");
 
-            await _repository.Save();
-            _logger.LogInfo($"Commited all transactions in database.");
-        }
+        //    await _repository.Save();
+        //    _logger.LogInfo($"Commited all transactions in database.");
+        //}
 
 
     }

@@ -8,6 +8,6 @@ namespace InventoryManagement.Services.Contracts
         Task<ProductDto> GetAllProductByIDAsync(int id);
         Task<ProductDto> CreateNewProductAsync(ProductDto NewProductInfo);
         Task UpdateProductAsync(int id, ProductDto UpdatedProductinfo);
-        Task DeleteProductAsync(int id);
+       // Task DeleteProductAsync(int id);
     }
 }
