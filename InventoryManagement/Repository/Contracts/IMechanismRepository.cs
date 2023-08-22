@@ -7,6 +7,7 @@ namespace InventoryManagement.Repository.Contracts
         {
             Task<IEnumerable<Mechanism>> GetAllMechanism();
             Task<Mechanism> GetMechanismByID(int id);
+           // Task<Mechanism> DeleteMechanism(int id);
         }
     
 }

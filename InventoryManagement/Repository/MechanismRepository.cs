@@ -30,5 +30,7 @@ namespace InventoryManagement.Repository
             }
             return mechanism;
         }
+
+
     }
 }

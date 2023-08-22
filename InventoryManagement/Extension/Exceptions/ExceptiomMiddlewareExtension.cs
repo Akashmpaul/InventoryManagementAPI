@@ -1,5 +1,5 @@
-﻿using InventoryManagement.Extension.Logger;
-using InventoryManagement.DTOs.Error;
+﻿using InventoryManagement.DTOs.Error;
+using InventoryManagement.Extension.Logger;
 using Microsoft.AspNetCore.Diagnostics;
 using System.Text.Json;
 
